@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Plans | ROCKYFIT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <header class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">ROCKY<span>FIT</span></a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="membership.html" class="nav-link active">Membership</a>
+                <a href="trainers.html" class="nav-link">Trainers</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+
+    <section class="sub-hero"
+        style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        <div class="container">
+            <h1 class="section-title">Membership <span>Plans</span></h1>
+            <p>Choose the right level of commitment for your fitness journey.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="pricing-toggle">
+                <span>Monthly</span>
+                <div class="toggle-btn" id="plan-toggle"></div>
+                <span>Yearly <small>(Save 20%)</small></span>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Basic Plan -->
+                <div class="pricing-card reveal">
+                    <div class="plan-header">
+                        <h3>Starter</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="30" data-yearly="25">30</span>
+                            <span class="duration">/mo</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><ion-icon name="checkmark-outline"></ion-icon> Access to Gym Floor</li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon> Basic Locker Room</li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon> 1 Orientation Session</li>
+                        <li class="muted"><ion-icon name="close-outline"></ion-icon> Group Classes</li>
+                        <li class="muted"><ion-icon name="close-outline"></ion-icon> Personal Trainer</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Select Plan</a>
+                </div>
+
+                <!-- Pro Plan -->
+                <div class="pricing-card featured reveal">
+                    <div class="badge">Most Popular</div>
+                    <div class="plan-header">
+                        <h3>Pro Performance</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="50" data-yearly="40">50</span>
+                            <span class="duration">/mo</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><ion-icon name="checkmark-outline"></ion-icon> All Gym Access</li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon> All Group Classes</li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon> Free Guest Passes (2/mo)</li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon> Premium Lockers</li>
+                        <li class="muted"><ion-icon name="close-outline"></ion-icon> Private Coaching</li>
+                    </ul>
+                    <a href="#" class="btn">Select Plan</a>
+                </div>
+
+                <!-- Elite Plan -->
+                <div class="pricing-card reveal">
+                    <div class="plan-header">
+                        <h3>Elite Warrior</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount" data-monthly="85" data-yearly="70">85</span>
+                            <span class="duration">/mo</span>
+                        </div>
+                    </div>
+                    <ul class="plan-features">
+                        <li><ion-icon name="checkmark-outline"></ion-icon> Unlimited VIP Access</li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon> 2 Private Sessions/mo</li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon> Personal Nutrition Plan</li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon> Laundry Service</li>
+                        <li><ion-icon name="checkmark-outline"></ion-icon> Recovery Zone Access</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Select Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section registration">
+        <div class="container registration-box">
+            <div class="reg-text">
+                <h2>Join The Elite</h2>
+                <p>Fill out the form below and our team will contact you within 24 hours to schedule your first session.
+                </p>
+            </div>
+            <form id="contact-form" class="reg-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Full Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="">Select Plan</option>
+                        <option value="starter">Starter</option>
+                        <option value="pro">Pro Performance</option>
+                        <option value="elite">Elite Warrior</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">Register Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">ROCKY<span>FIT</span></a>
+                <p>Empowering individuals to reach their peak potential since 2012.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="trainers.html">Trainers</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <div class="social-links" style="display:flex; gap:1rem; font-size:1.5rem;">
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .sub-hero {
+            padding: 10rem 0 5rem;
+            text-align: center;
+        }
+
+        .sub-hero h1 span {
+            color: var(--primary);
+        }
+
+        .pricing-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .toggle-btn {
+            width: 60px;
+            height: 30px;
+            background: var(--bg-card);
+            border-radius: 30px;
+            position: relative;
+            cursor: pointer;
+            border: 1px solid var(--glass-border);
+        }
+
+        .toggle-btn::after {
+            content: '';
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            background: var(--primary);
+            border-radius: 50%;
+            top: 3px;
+            left: 4px;
+            transition: 0.3s;
+        }
+
+        .toggle-btn.active::after {
+            left: 32px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .pricing-card {
+            background: var(--bg-card);
+            padding: 4rem 3rem;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            transition: 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pricing-card.featured {
+            border-color: var(--primary);
+            transform: translateY(-10px);
+            background: #1a1a1a;
+        }
+
+        .badge {
+            position: absolute;
+            top: 20px;
+            right: -30px;
+            background: var(--primary);
+            color: white;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            font-weight: 700;
+            font-size: 0.8rem;
+        }
+
+        .plan-header h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            margin-bottom: 2.5rem;
+        }
+
+        .currency {
+            font-size: 1.5rem;
+            vertical-align: top;
+            color: var(--primary);
+        }
+
+        .amount {
+            font-size: 4rem;
+            font-weight: 900;
+            line-height: 1;
+        }
+
+        .duration {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .plan-features {
+            margin-bottom: 3rem;
+        }
+
+        .plan-features li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.2rem;
+            font-weight: 500;
+        }
+
+        .plan-features li.muted {
+            opacity: 0.3;
+        }
+
+        .plan-features ion-icon {
+            font-size: 1.2rem;
+            color: var(--primary);
+        }
+
+        .registration-box {
+            background: var(--bg-card);
+            padding: 5rem;
+            border-radius: 30px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-bottom: 5rem;
+        }
+
+        .reg-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .reg-form input,
+        .reg-form select {
+            padding: 1rem 1.5rem;
+            background: var(--bg-dark);
+            border: 1px solid var(--glass-border);
+            color: white;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: 0.8s var(--transition);
+        }
+
+        .reveal-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 968px) {
+            .registration-box {
+                grid-template-columns: 1fr;
+                padding: 3rem 2rem;
+            }
+        }
+    </style>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Membership Toggle Logic
+        const toggle = document.getElementById('plan-toggle');
+        const amounts = document.querySelectorAll('.amount');
+
+        toggle.addEventListener('click', () => {
+            toggle.classList.toggle('active');
+            const isYearly = toggle.classList.contains('active');
+
+            amounts.forEach(amount => {
+                amount.innerText = isYearly ? amount.dataset.yearly : amount.dataset.monthly;
+            });
+        });
+    </script>
+</body>
+
+</html>
