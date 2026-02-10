@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | ROCKYFIT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <header class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">ROCKY<span>FIT</span></a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="membership.html" class="nav-link">Membership</a>
+                <a href="trainers.html" class="nav-link">Trainers</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+
+    <section class="sub-hero"
+        style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        <div class="container">
+            <h1 class="section-title">Our <span>Services</span></h1>
+            <p>Comprehensive fitness solutions tailored for every goal.</p>
+        </div>
+    </section>
+
+    <section class="section services-detailed">
+        <div class="container">
+            <div class="service-row reveal">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=800&q=80"
+                        alt="Personal Training">
+                </div>
+                <div class="service-info">
+                    <span class="service-num">01</span>
+                    <h2>Personal Training</h2>
+                    <p>Get personalized attention from our certified trainers. We create bespoke workout plans and
+                        nutrition guides specifically for your body type and fitness objectives.</p>
+                    <ul class="service-benefits">
+                        <li><ion-icon name="caret-forward"></ion-icon> 1-on-1 Dedicated Sessions</li>
+                        <li><ion-icon name="caret-forward"></ion-icon> Body Composition Analysis</li>
+                        <li><ion-icon name="caret-forward"></ion-icon> Progressive Tracking</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="service-row reverse reveal">
+                <div class="service-info">
+                    <span class="service-num">02</span>
+                    <h2>Group Classes</h2>
+                    <p>Experience the energy of group fitness. From high-intensity HIIT sessions to spinning and
+                        Bootcamps, our classes are designed to keep you motivated and moving.</p>
+                    <ul class="service-benefits">
+                        <li><ion-icon name="caret-forward"></ion-icon> High-Energy Atmosphere</li>
+                        <li><ion-icon name="caret-forward"></ion-icon> Multiple Daily Sessions</li>
+                        <li><ion-icon name="caret-forward"></ion-icon> All Skill Levels Welcome</li>
+                    </ul>
+                </div>
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80"
+                        alt="Group Exercise">
+                </div>
+            </div>
+
+            <div class="service-row reveal">
+                <div class="service-img">
+                    <img src="https://images.unsplash.com/photo-1599058917233-57c0e621c400?auto=format&fit=crop&w=800&q=80"
+                        alt="Yoga & Mindfulness">
+                </div>
+                <div class="service-info">
+                    <span class="service-num">03</span>
+                    <h2>Yoga & Mindfulness</h2>
+                    <p>Balance your strength with flexibility. Our yoga studio provides a serene environment to improve
+                        your mobility, core stability, and mental clarity.</p>
+                    <ul class="service-benefits">
+                        <li><ion-icon name="caret-forward"></ion-icon> Hatha & Vinyasa Styles</li>
+                        <li><ion-icon name="caret-forward"></ion-icon> Expert Yoga Instructors</li>
+                        <li><ion-icon name="caret-forward"></ion-icon> Sunset Rooftop Sessions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="index.html" class="logo">ROCKY<span>FIT</span></a>
+                <p>Architecting performance since 2012.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="membership.html">Membership</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <div class="social-links" style="display:flex; gap:1rem; font-size:1.5rem;">
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <style>
+        .sub-hero {
+            padding: 10rem 0 5rem;
+            text-align: center;
+        }
+
+        .sub-hero h1 span {
+            color: var(--primary);
+        }
+
+        .service-row {
+            display: flex;
+            align-items: center;
+            gap: 6rem;
+            margin-bottom: 8rem;
+        }
+
+        .service-row.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .service-img,
+        .service-info {
+            flex: 1;
+        }
+
+        .service-img img {
+            border-radius: 30px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        .service-num {
+            font-size: 5rem;
+            font-weight: 900;
+            color: var(--primary);
+            opacity: 0.15;
+            line-height: 1;
+            position: absolute;
+            top: -30px;
+            left: -20px;
+            z-index: -1;
+        }
+
+        .service-info {
+            position: relative;
+        }
+
+        .service-info h2 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+        }
+
+        .service-info p {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+        }
+
+        .service-benefits li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .service-benefits ion-icon {
+            color: var(--primary);
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: 0.8s var(--transition);
+        }
+
+        .reveal-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 968px) {
+
+            .service-row,
+            .service-row.reverse {
+                flex-direction: column;
+                gap: 3rem;
+                text-align: center;
+            }
+
+            .service-info h2 {
+                font-size: 2rem;
+            }
+
+            .service-num {
+                left: 50%;
+                transform: translateX(-50%);
+                top: -40px;
+            }
+
+            .service-benefits {
+                display: inline-block;
+                text-align: left;
+            }
+        }
+    </style>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
