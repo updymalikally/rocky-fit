@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ROCKYFIT</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <header class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">ROCKY<span>FIT</span></a>
+            <nav class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="membership.html" class="nav-link">Membership</a>
+                <a href="trainers.html" class="nav-link">Trainers</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+            <div class="menu-toggle" id="mobile-menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+
+    <section class="sub-hero"
+        style="background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1920&q=80') center/cover;">
+        <div class="container">
+            <h1 class="section-title">Get In <span>Touch</span></h1>
+            <p>Have questions? We're here to help you start your journey.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container contact-wrapper">
+            <div class="contact-info reveal">
+                <div class="info-card">
+                    <ion-icon name="location-outline"></ion-icon>
+                    <div>
+                        <h3>Our Location</h3>
+                        <p>Kampala, Uganda</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p>+256708571963</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <div>
+                        <h3>Email Us</h3>
+                        <p>rockyfit@gmail.com</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <div>
+                        <h3>Working Hours</h3>
+                        <p>Open 24 Hours / 7 Days a Week</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-container reveal">
+                <form id="contact-form" class="reg-form">
+                    <div class="grid-2" style="gap:1.5rem;">
+                        <input type="text" placeholder="First Name" required>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                    <input type="email" placeholder="Email Address" required>
+                    <textarea placeholder="Your Message"
+                        style="padding:1rem 1.5rem; background:var(--bg-card); border:1px solid var(--glass-border); color:white; border-radius:8px; min-height:150px;"></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        .sub-hero {
+            padding: 10rem 0 5rem;
+            text-align: center;
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .info-card {
+            background: var(--bg-card);
+            padding: 2.5rem;
+            border-radius: 20px;
+            border: 1px solid var(--glass-border);
+            display: flex;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .info-card ion-icon {
+            font-size: 2.5rem;
+            color: var(--primary);
+        }
+
+        .info-card h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-form-container {
+            background: var(--bg-card);
+            padding: 4rem;
+            border-radius: 30px;
+            border: 1px solid var(--primary);
+        }
+
+        .reg-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .reg-form input {
+            padding: 1.2rem;
+            background: var(--bg-dark);
+            border: 1px solid var(--glass-border);
+            color: white;
+            border-radius: 8px;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: 0.8s var(--transition);
+        }
+
+        .reveal-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (max-width: 968px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form-container {
+                padding: 2.5rem;
+            }
+        }
+    </style>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
